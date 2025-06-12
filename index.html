@@ -29,7 +29,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#treatments">Tratamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tratamentos">Tratamentos</a></li>
           <li class="nav-item"><a class="nav-link" href="#clinic">Consultório</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
         </ul>
@@ -37,14 +37,17 @@
     </div>
   </nav>
 
-  <!-- Início -->
-  <section id="home" class="vh-100 d-flex align-items-center justify-content-center bg-light text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Cuidando do seu bem-estar</h1>
-      <p class="lead">Excelência em saúde com um toque humano</p>
-      <a href="#contact" class="btn btn-primary mt-3">Agende sua consulta</a>
-    </div>
-  </section>
+  <!-- Seção Início -->
+<section id="home" class="inicio-banner d-flex align-items-center justify-content-center text-white text-center">
+  <div class="overlay"></div>
+  <div class="container position-relative">
+    <h1 class="display-4 fw-bold">Cuidando do seu bem-estar</h1>
+    <p class="lead">Excelência em saúde com um toque humano</p>
+    <a href="#contact" class="btn btn-primary mt-3">Agende sua consulta</a>
+  </div>
+</section>
+
+
 
   <!-- Sobre -->
   <section id="about" class="py-5">
@@ -68,30 +71,69 @@
     </div>
   </section>
 
-  <!-- Tratamentos -->
-  <section id="treatments" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Tratamentos</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <i class="bi bi-thermometer-half fs-1 text-secondary"></i>
-          <p>Check-up Geral</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-tooth fs-1 text-secondary"></i>
-          <p>Odontologia</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-heart fs-1 text-secondary"></i>
-          <p>Cardiologia</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-eye fs-1 text-secondary"></i>
-          <p>Oftalmologia</p>
-        </div>
+    <!-- Tratamentos -->
+    <section class="tratamentos" id="tratamentos">
+    <h2>Tratamentos</h2>
+
+    <div class="tratamentos-container">
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Ortodontia">
+        <h3>Ortodontia</h3>
+        <p>A função do aparelho ortodôntico é corrigir a posição dos dentes para fins de estética ou de mastigação. Os aparelhos ortodônticos podem ser fixos ou móveis, dependendo da avaliação do ortodontista.</p>
+        <a href="./pages/ortodontia.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Implantodontia">
+        <h3>Implantodontia</h3>
+        <p>Implantodontia é um ramo da Odontologia que se destina ao tratamento do edentulismo com reabilitações protéticas suportadas ou retidas por implantes dentários.</p>
+        <a href="./pages/implantodontia.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Clareamento">
+        <h3>Clareamento</h3>
+        <p>O clareamento na verdade é uma reação química. As substâncias vão liberar oxigênio, que é um radical livre. O dente é permeável e o efeito é cumulativo, portanto a cada seção o dente vai clareando cada vez mais até eliminar toda pigmentação.</p>
+        <a href="./pages/clareamento.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Oclusão">
+        <h3>Oclusão</h3>
+        <p>Oclusão é o ramo da odontologia que estuda as relações de mordida entre os arcos dentários superior e inferior. Os movimentos mandibulares são coordenados e diretamente ligados ao sistema neurológico, o que explica o deslocamento mandibular para um dos lados e mudança do eixo do corpo.</p>
+        <a href="./pages/oclusao.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Estética">
+        <h3>Estética</h3>
+        <p>A Odontologia Estética oferece ao paciente, além da saúde bucal, a promoção de um visual mais agradável. Para alguns o sorriso bonito melhora não só o encaixe do maxilar e a aparência do rosto, como também o bem estar do paciente.</p>
+        <a href="./pages/estetica.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Odontologia Preventiva">
+        <h3>Odontologia Preventiva</h3>
+        <p>A Odontologia Preventiva atua no sentido de promover a saúde dos dentes, evitando a cárie no paciente. A Odontologia Preventiva consiste em visitas freqüentes ao cirurgião dentista para cuidar da saúde dental.</p>
+        <a href="./pages/odontologiaPreventiva.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Dentística">
+        <h3>Dentística</h3>
+        <p>Responsável por tratar da doença cárie, suas repercussões sobre a estrutura dental e alterações de forma, textura e cor dos dentes, devolvendo aos pacientes a saúde e aos dentes a estética, a função e a anatomia..</p>
+        <a href="./pages/dentistica.html">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Prótese">
+        <h3>Prótese</h3>
+        <p>A prótese tem a finalidade de substituição de elementos (dentes) ausentes na arcada dentária, para devolver a função (auxiliando na mastigação) ou a estética (para que o paciente possa voltar a sorrir sem constrangimentos).</p>
+        <a href="./pages/protese.html">Saiba mais</a>
       </div>
     </div>
   </section>
+
 
   <!-- Consultório -->
   <section id="clinic" class="py-5">
