@@ -184,3 +184,44 @@ section {
   }
 }
 
+
+/* ========= Consultório ========== */
+
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+  .textcenter {
+    text-align: center;
+  }
+}
+
+.titulo-com-linhas {
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.titulo-com-linhas hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid;
+  height: 1px;
+  margin: 0;    
+}
+
+.titulo-com-linhas h2 {
+  margin: 0;       
+  font-size: 2rem; 
+}
+
+@media (width: 768px) {
+  .col-md-6 {
+      flex: 0 0 auto;
+      width: 100% !important;
+      text-align: center;
+  }
+}
