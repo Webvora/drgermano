@@ -1,144 +1,81 @@
-/* === BASE === */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background-color: #003366;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav {
   background-color: #002244;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 1rem;
-  justify-content: center;
-}
-
-nav a {
   color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.main-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+}
+
+.btn-voltar {
+  position: relative;
+  display: inline-block;
+  color: #1a1a1a;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #004488;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  white-space: nowrap;
+  padding: 8px 12px;
+  font-weight: bold;
+  overflow: hidden;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: #0066cc;
-}
-
-/* === CONTEÚDO PRINCIPAL === */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  max-width: 80%;
-  margin: 2rem auto;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-main img,
-.coluna-imagem img {
-  max-width: 100%;
-  border-radius: 6px;
-}
-
-/* === TEXTO === */
-.coluna-texto h2 {
-  margin-top: 0;
-}
-
-.coluna-texto p {
-  line-height: 1.6;
-}
-
-/* === BOTÃO VOLTAR === */
-.voltar-home {
+.btn-voltar::after {
+  content: '';
   position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #89c442;
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-  z-index: 10;
-  transition: background-color 0.3s;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #1a1a1a; /* cor da barra */
+  transition: width 0.3s ease;
 }
 
-.voltar-home:hover {
-  background-color: #388e3c;
-}
-
-/* === RESPONSIVO === */
-
-/* Até 1300px */
-@media (max-width: 1300px) {
-  nav {
-    display: none;
-  }
-
-  main {
-    grid-template-columns: 1fr;
-  }
-
-  .voltar-home {
-    top: 1rem;
-    left: 1rem;
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
-  header h1 {
-    margin-top: 2.5rem; /* espaço extra para o botão */
+/* Efeito de hover apenas para telas maiores (ex: min-width: 768px) */
+@media (min-width: 768px) {
+  .btn-voltar:hover::after {
+    width: 100%;
   }
 }
 
-/* Até 900px */
-@media (max-width: 900px) {
-  main {
-    grid-template-columns: 1fr;
+
+@media (max-width: 1217px) {
+  .row {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (max-width: 600px) {
-  .voltar-home {
-    position: absolute;
-    top: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    text-align: center;
-    font-size: 12px;
-    padding: 6px 10px;
-    max-width: 120px;
-    line-height: 1.2;
-    word-break: break-word;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+/* Responsividade para telas de 769px a 1217px */
+@media (min-width: 769px) and (max-width: 1217px) {
+  .main-img {
+    max-width: 100%;
+    height: auto;
+    width: 110%; /* aumenta um pouco a imagem */
   }
 
-  header h1 {
-    font-size: 1.2rem;
-    margin-top: 2rem; /* Ajuste para não colidir com o botão */
+  .main-text {
+    font-size: 1.15rem; /* aumenta um pouco a fonte */
+    line-height: 1.8;
   }
+}
+
+.main-img {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); /* sombra mais escura e ampla */
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.main-img:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* sombra ainda mais intensa no hover */
 }

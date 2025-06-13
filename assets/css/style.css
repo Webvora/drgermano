@@ -92,6 +92,38 @@ section {
 
 
 
+/* section sobre */
+/* Justificação apenas para a primeira coluna de texto no "Sobre" */
+@media (max-width: 992px) {
+  #about .row.align-items-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Justifica apenas os textos da primeira coluna (onde está o texto do Dr. Germano) */
+  #about .col-md-6:first-child h4,
+  #about .col-md-6:first-child p {
+    text-align: justify;
+  }
+
+  #about .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
 
 /* Seção de Tratamentos */
 .tratamentos {
