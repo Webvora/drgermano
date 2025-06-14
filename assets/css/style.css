@@ -36,11 +36,6 @@ body {
 
 
 
-.inicio-banner .container {
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-}
 
 /* Animação de entrada suave */
 @keyframes fadeInUp {
