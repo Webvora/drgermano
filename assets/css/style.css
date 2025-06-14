@@ -272,7 +272,7 @@ section {
 
 /* section sobre */
 /* Justificação apenas para a primeira coluna de texto no "Sobre" */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   #about .row.align-items-center {
     flex-direction: column;
     text-align: center;
@@ -404,7 +404,7 @@ section {
 
 @media (max-width: 425px) {
   .textcenter {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -475,7 +475,7 @@ section {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background-color: #0fc26e;
+  background-color: #5aa090;
   border-radius: 10px;
 }
 
@@ -536,7 +536,7 @@ section {
 }
 
 .footer-bottom a {
-  color: #0fc26e;
+  color: #5aa090;
   text-decoration: none;
 }
 
@@ -556,5 +556,19 @@ section {
   .footer-col {
     min-width: unset;
   }
+}
+
+@media (max-width: 768px) {
+  .footer-col-redes {
+    max-height: 100px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-col-contato {
+    max-height: 250px;
+  }
+
 }
 
