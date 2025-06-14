@@ -21,83 +21,6 @@ body {
 
 
 
-/* SEÇÃO INÍCIO COM ANIMAÇÕES UNIFICADAS */
-.inicio-banner {
-  position: relative;
-  height: 100svh; /* Usa o Dynamic Viewport Height (atual e correto) */
-  min-height: 550px;
-  background: url('../img/bannerprincipal-germano.jpg') no-repeat center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: unset;
-}
-
-
-
-
-/* Animação de entrada suave */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Título com fadeIn para melhorar responsividade */
-.inicio-banner h1 {
-  display: inline-block;
-  overflow: hidden;
-  white-space: normal;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: #fff;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  opacity: 0;
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-/* Subtítulo */
-.inicio-banner .lead {
-  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
-  color: #fff;
-  margin-bottom: 2rem;
-  opacity: 0;
-  animation: fadeInUp 1s ease-out 0.6s forwards;
-}
-
-/* Botão */
-.inicio-banner .btn {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  padding: 12px 30px;
-  border-radius: 50px;
-  opacity: 0;
-  animation: fadeInUp 1s ease-out 1.2s forwards;
-  transition: transform 0.3s;
-}
-
-.inicio-banner .btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-
-
-.frase-banner .autor {
-  display: block;
-  font-style: italic;
-  font-size: 0.8em;
-  margin-top: 5px;
-  opacity: 0.8;
-}
-
-/* RESPONSIVIDADE */
-
 
 
 
@@ -173,6 +96,50 @@ section {
   z-index: 2;
 }
 
+/* Animação de entrada suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título com fadeIn para melhorar responsividade */
+.inicio-banner h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Subtítulo */
+.inicio-banner .lead {
+  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+  color: #fff;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+/* Botão */
+.inicio-banner .btn {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 12px 30px;
+  border-radius: 50px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1.2s forwards;
+  transition: transform 0.3s;
+}
+
 /* Frase atravessando a tela */
 .frase-banner {
   position: absolute;
@@ -210,6 +177,9 @@ section {
     font-size: clamp(0.75rem, 1.8vw, 1.2rem);
     padding: 6px 12px;
     bottom: 3%;
+  }
+  .inicio-banner {
+    background-attachment: scroll;
   }
 }
 
