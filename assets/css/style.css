@@ -152,14 +152,14 @@ section {
 /* Seção início com parallax */
 .inicio-banner {
   position: relative;
-  height: 100vh;
+  height: 100svh;
   background: url('../img/bannerprincipal-germano.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: unset;
 }
 
 .inicio-banner .overlay {
