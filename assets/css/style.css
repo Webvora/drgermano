@@ -24,8 +24,7 @@ body {
 /* SEÇÃO INÍCIO COM ANIMAÇÕES UNIFICADAS */
 .inicio-banner {
   position: relative;
-  height: 100vh;
-  height: 100dvh; /* Usa o Dynamic Viewport Height (atual e correto) */
+  height: 100svh; /* Usa o Dynamic Viewport Height (atual e correto) */
   min-height: 550px;
   background: url('../img/bannerprincipal-germano.jpg') no-repeat center center;
   background-size: cover;
