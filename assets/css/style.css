@@ -98,35 +98,7 @@ body {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  .inicio-banner {
-    min-height: 450px;
-    background-attachment: scroll;
-  }
-  
-  .inicio-banner h1 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-  }
 
-  .inicio-banner .lead {
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-  }
-}
-
-@media (max-width: 450px) {
-  .inicio-banner {
-    min-height: 400px;
-  }
-
-  .inicio-banner h1 {
-    font-size: 1.8rem;
-  }
-
-  .inicio-banner .lead {
-    font-size: 1rem;
-  }
-
-}
 
 
 
