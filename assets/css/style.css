@@ -572,3 +572,11 @@ section {
 
 }
 
+/* localização. */
+
+@media (max-width: 425px) {
+  .localizacao-height {
+        max-height: 380px !important;
+  }
+}
+
