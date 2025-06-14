@@ -15,12 +15,133 @@ body {
   animation: bounce 0.4s;
 }
 
-@keyframes bounce {
-  0%   { transform: translateY(0); }
-  30%  { transform: translateY(-5px); }
-  60%  { transform: translateY(3px); }
-  100% { transform: translateY(0); }
+
+
+
+
+
+
+/* SEÇÃO INÍCIO COM ANIMAÇÕES UNIFICADAS */
+.inicio-banner {
+  position: relative;
+  height: 100vh;
+  min-height: 550px;
+  background: url('../img/bannerprincipal-germano.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.inicio-banner .container {
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título com fadeIn para melhorar responsividade */
+.inicio-banner h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Subtítulo */
+.inicio-banner .lead {
+  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+  color: #fff;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+/* Botão */
+.inicio-banner .btn {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 12px 30px;
+  border-radius: 50px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1.2s forwards;
+  transition: transform 0.3s;
+}
+
+.inicio-banner .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+.frase-banner .autor {
+  display: block;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .inicio-banner {
+    min-height: 450px;
+    background-attachment: scroll;
+  }
+  
+  .inicio-banner h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+
+  .inicio-banner .lead {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+  }
+}
+
+@media (max-width: 450px) {
+  .inicio-banner {
+    min-height: 400px;
+  }
+
+  .inicio-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .inicio-banner .lead {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+
+
+
 
 section {
   padding-top: 80px;
@@ -66,7 +187,7 @@ section {
 
 
 
-/* Seção inicio com parallax */
+/* Seção início com parallax */
 .inicio-banner {
   position: relative;
   height: 100vh;
@@ -96,51 +217,31 @@ section {
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap;
-  font-size: clamp(0.8rem, 2vw, 2rem);
-  color: rgba(255, 255, 255, 0.9);
-  font-style: italic;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 8px 20px;
-  border-radius: 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.frase-banner .autor {
-  margin-left: 15px;
-  font-size: 0.9em;
-  opacity: 0.8;
-}
-
-/* Texto atravessando a tela - Versão ajustada */
-.frase-banner {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
   width: 95%;
   max-width: 100%;
   text-align: center;
   font-size: clamp(0.8rem, 2vw, 1.5rem);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.5);
   padding: 8px 15px;
-  border-radius: 4px;
-  white-space: normal; /* Permite quebra de linha */
-  word-wrap: break-word; /* Quebra palavras longas */
-  margin: 0 auto;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  white-space: normal;
+  word-wrap: break-word;
+  z-index: 2;
   box-sizing: border-box;
 }
 
-.autor {
-  display: block; /* Coloca o autor em linha separada */
-  font-style: italic;
+.frase-banner .autor {
+  display: block;
   margin-top: 4px;
+  font-size: 0.9em;
+  opacity: 0.8;
 }
 
-/* Responsivo ajustado */
+/* Responsivo */
 @media (max-width: 768px) {
   .frase-banner {
     width: 90%;
@@ -158,8 +259,8 @@ section {
     line-height: 1.3;
     bottom: 2%;
   }
-  
-  .autor {
+
+  .frase-banner .autor {
     margin-top: 2px;
     font-size: 0.65rem;
   }
