@@ -15,19 +15,6 @@ body {
   animation: bounce 0.4s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 section {
   padding-top: 80px;
   scroll-margin-top: 80px;
@@ -67,10 +54,6 @@ section {
 .whatsapp-float svg:hover {
   transform: scale(1.1);
 }
-
-
-
-
 
 /* Seção início com parallax */
 .inicio-banner {
@@ -198,10 +181,6 @@ section {
   }
 }
 
-
-
-
-
 /* section sobre */
 /* Justificação apenas para a primeira coluna de texto no "Sobre" */
 @media (max-width: 992px) {
@@ -227,13 +206,6 @@ section {
     height: auto;
   }
 }
-
-
-
-
-
-
-
 
 /* Seção de Tratamentos */
 .tratamentos {
@@ -280,7 +252,7 @@ section {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16px;
-  border: 3px solid #a3cf4a;
+  border: 3px solid #42B3A4;
 }
 
 /* Título */
@@ -304,7 +276,7 @@ section {
 /* Botão "Saiba mais" fixado ao final do card */
 .card a {
   display: inline-block;
-  background-color: #89c442;
+  background-color: #42B3A4;
   color: #fff;
   padding: 8px 16px;
   border-radius: 6px;
@@ -315,7 +287,7 @@ section {
 }
 
 .card a:hover {
-  background-color: #77ab3b;
+  background-color: #379185;
 }
 
 /* Hover apenas no desktop */
