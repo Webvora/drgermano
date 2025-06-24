@@ -7,6 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preload" as="image" href="./assets/img/bannerprincipal-germano.jpg">
+  <meta name="description" content="Clínica Odontológica Dr. Germano | Tratamentos de qualidade em odontologia estética, implantes, ortodontia e saúde bucal. Agende sua consulta e sorria com confiança!">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
@@ -86,7 +88,7 @@
       <img
         src="assets/img/image.png"
         alt="foto-germano"
-        class="img-fluid rounded shadow w-100 rounded"
+        class="img-fluid rounded shadow w-100 rounded "
       />
     </div>
   </div>
@@ -232,28 +234,35 @@
 </section>
 
   <!-- Contato -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Entre em Contato</h2>
-      <form class="row g-3">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Nome" required>
-        </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="E-mail" required>
-        </div>
-        <div class="col-12">
-          <textarea class="form-control" rows="4" placeholder="Mensagem" required></textarea>
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-      <div class="text-center mt-4">
-        <p>Telefone: (00) 1234-5678 | E-mail: contato@clinica.com</p>
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Entre em Contato</h2>
+    <form class="row g-3" action="https://formsubmit.co/odontologia@drgermano.com.br" method="POST">
+      
+      <!-- Anti-spam (opcional) -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirecionamento após envio (opcional) -->
+      <input type="hidden" name="_next" value="https://drgermano.com.br/obrigado.html">
+
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Nome" required>
       </div>
+      <div class="col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+      </div>
+      <div class="col-12">
+        <textarea name="message" class="form-control" rows="4" placeholder="Mensagem" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+    <div class="text-center mt-4">
+      <p>Telefone: (00) 1234-5678 | E-mail: odontologia@drgermano.com.br</p>
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- footer -->
    <footer class="footer">
@@ -269,7 +278,7 @@
       <ul>
         <li><a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp: (XX) XXXX-XXXX</a></li>
         <li><a href="mailto:seuemail@email.com">E-mail: seuemail@email.com</a></li>
-        <li><a href="#">Endereço: Rua Exemplo, 123 - Sua Cidade</a></li>
+        <li><a href="">Endereço: Rua Exemplo, 123 - Sua Cidade</a></li>
         <li><a href="tel:+55SEUNUMERO">Telefone: (XX) XXXX-XXXX</a></li>
       </ul>
     </div>
