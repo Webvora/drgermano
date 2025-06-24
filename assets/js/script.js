@@ -12,3 +12,23 @@ window.addEventListener('scroll', function () {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
+
+
+
+
+//fechar menu mobile
+// Fecha o menu automaticamente no mobile após clicar em um link
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navCollapse = document.getElementById('navContent');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const isVisible = window.getComputedStyle(navCollapse).display === 'block';
+      if (isVisible) {
+        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+        bsCollapse.hide();
+      }
+    });
+  });
+});
