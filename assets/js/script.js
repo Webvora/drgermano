@@ -32,3 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+
+
+//script para o botão de enviar do form
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const spinner = document.getElementById("spinner");
+
+    form.addEventListener("submit", function () {
+      submitBtn.disabled = true;
+      spinner.classList.remove("d-none");
+    });
+  });

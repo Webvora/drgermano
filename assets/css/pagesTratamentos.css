@@ -16,7 +16,7 @@ h1, h2 {
 
 .main-img {
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   width: 100%;
 }
 
@@ -71,11 +71,11 @@ h1, h2 {
 }
 
 .main-img {
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); /* sombra mais escura e ampla */
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4); /* sombra mais escura e ampla */
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
 }
 
 .main-img:hover {
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* sombra ainda mais intensa no hover */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); /* sombra ainda mais intensa no hover */
 }

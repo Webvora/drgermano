@@ -127,28 +127,28 @@
     </div>
     <div class="tratamentos-container">
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Ortodontia">
+        <img src="assets/img/ortodontia.jpg" alt="Ortodontia">
         <h3>Ortodontia</h3>
         <p>A função do aparelho ortodôntico é corrigir a posição dos dentes para fins de estética ou de mastigação. Os aparelhos ortodônticos podem ser fixos ou móveis, dependendo da avaliação do ortodontista.</p>
         <a href="./pages/ortodontia.html">Saiba mais</a>
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Implantodontia">
+        <img src="assets/img/implantodontia.jpg" alt="Implantodontia">
         <h3>Implantodontia</h3>
         <p>Implantodontia é um ramo da Odontologia que se destina ao tratamento do edentulismo com reabilitações protéticas suportadas ou retidas por implantes dentários.</p>
         <a href="./pages/implantodontia.html">Saiba mais</a>
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Clareamento">
+        <img src="assets/img/clareamento.jpg" alt="Clareamento">
         <h3>Clareamento</h3>
         <p>O clareamento na verdade é uma reação química. As substâncias vão liberar oxigênio, que é um radical livre. O dente é permeável e o efeito é cumulativo, portanto a cada seção o dente vai clareando cada vez mais até eliminar toda pigmentação.</p>
         <a href="./pages/clareamento.html">Saiba mais</a>
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Oclusão">
+        <img src="assets/img/oclusao.jpeg" alt="Oclusão">
         <h3>Oclusão</h3>
         <p>Oclusão é o ramo da odontologia que estuda as relações de mordida entre os arcos dentários superior e inferior. Os movimentos mandibulares são coordenados e diretamente ligados ao sistema neurológico, o que explica o deslocamento mandibular para um dos lados e mudança do eixo do corpo.</p>
         <a href="./pages/oclusao.html">Saiba mais</a>
@@ -162,21 +162,21 @@
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Odontologia Preventiva">
+        <img src="assets/img/dent.jpg" alt="Odontologia Preventiva">
         <h3>Odontologia Preventiva</h3>
         <p>A Odontologia Preventiva atua no sentido de promover a saúde dos dentes, evitando a cárie no paciente. A Odontologia Preventiva consiste em visitas freqüentes ao cirurgião dentista para cuidar da saúde dental.</p>
         <a href="./pages/odontologiaPreventiva.html">Saiba mais</a>
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Dentística">
+        <img src="assets/img/dentistica.jpg" alt="Dentística">
         <h3>Dentística</h3>
         <p>Responsável por tratar da doença cárie, suas repercussões sobre a estrutura dental e alterações de forma, textura e cor dos dentes, devolvendo aos pacientes a saúde e aos dentes a estética, a função e a anatomia..</p>
         <a href="./pages/dentistica.html">Saiba mais</a>
       </div>
 
       <div class="card">
-        <img src="assets/img/instrumentos-odontologicos-cursos-cpt.jpg" alt="Prótese">
+        <img src="assets/img/protese.jpg" alt="Prótese">
         <h3>Prótese</h3>
         <p>A prótese tem a finalidade de substituição de elementos (dentes) ausentes na arcada dentária, para devolver a função (auxiliando na mastigação) ou a estética (para que o paciente possa voltar a sorrir sem constrangimentos).</p>
         <a href="./pages/protese.html">Saiba mais</a>
@@ -233,35 +233,42 @@
   </div>
 </section>
 
-  <!-- Contato -->
+ <!-- Contato -->
 <section id="contact" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4">Entre em Contato</h2>
-    <form class="row g-3" action="https://formsubmit.co/odontologia@drgermano.com.br" method="POST">
+    <form id="contactForm" class="row g-3" action="https://formsubmit.co/odontologia@drgermano.com.br" method="POST">
       
       <!-- Anti-spam (opcional) -->
       <input type="hidden" name="_captcha" value="false">
       <!-- Redirecionamento após envio (opcional) -->
-      <input type="hidden" name="_next" value="https://drgermano.com.br/obrigado.html">
+      <input type="hidden" name="_next" value="/obrigado.html">
 
       <div class="col-md-6">
         <input type="text" name="name" class="form-control" placeholder="Nome" required>
       </div>
       <div class="col-md-6">
+        <input type="tel" name="phone" class="form-control" placeholder="Telefone" required>
+      </div>
+      <div class="col-12">
         <input type="email" name="email" class="form-control" placeholder="E-mail" required>
       </div>
       <div class="col-12">
         <textarea name="message" class="form-control" rows="4" placeholder="Mensagem" required></textarea>
       </div>
       <div class="col-12 text-center">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button id="submitBtn" type="submit" class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true" id="spinner"></span>
+          Enviar
+        </button>
       </div>
     </form>
-      <div class="text-center mt-4">
-        <p>Telefone: (45) 9 9832-6949 | E-mail: odontologia@drgermano.com.br</p>
-      </div>
+    <div class="text-center mt-4">
+      <p>Telefone: (45) 9 9832-6949 | E-mail: odontologia@drgermano.com.br</p>
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- footer -->
    <footer class="footer">
@@ -295,7 +302,7 @@
 
   <div class="footer-bottom">
     <p>© 2025 Germano Odontologia. Todos os direitos reservados.</p>
-    <p>Desenvolvido pela: <a href="https://www.wirestack.com.br" target="_blank">WireStack</a></p>
+    <p>Desenvolvido por: <a href="https://www.wirestack.com.br" target="_blank">WireStack</a></p>
   </div>
 </footer>
 
