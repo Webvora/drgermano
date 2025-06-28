@@ -462,3 +462,23 @@ section {
     max-height: 380px !important;
   }
 }
+
+/* Logo von Borstel do header */
+.logoVonBorstel-header {
+  width: 300px;
+  margin-top: 10px;
+}
+
+@media (max-Width: 320px) {
+  .logoVonBorstel-header {
+    width: 140px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-Width: 321px) and (max-Width: 425px){
+  .logoVonBorstel-header {
+    width: 180px;
+    margin-top: 10px;
+  }
+}
