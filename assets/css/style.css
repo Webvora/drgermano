@@ -391,6 +391,7 @@ section {
 .social-links {
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 
 .social-links a {
