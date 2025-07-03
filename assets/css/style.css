@@ -482,3 +482,10 @@ section {
     margin-top: 10px;
   }
 }
+
+@media (min-width: 420px) and (max-width: 476px) {
+  .logoVonBorstel-header {
+    width: 240px;
+    margin-top: 10px;
+  }
+}
